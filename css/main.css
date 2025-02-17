@@ -1,0 +1,155 @@
+:root {
+  --main-color: #ec1c23;
+  --secondary-color: #08526d;
+}
+body {
+  font-family: "Lato", serif;
+}
+header .top-head span:first-of-type svg {
+  font-size: 14px;
+}
+header .top-head span:last-of-type {
+  border-color: var(--main-color) !important;
+}
+.navbar-nav .nav-link:hover {
+  color: #032b3a;
+}
+.landing-page .carousel .carousel-inner h1 {
+  z-index: 5;
+}
+@media (min-width: 576px) {
+  .landing-page .carousel .carousel-inner h1 {
+    font-size: 2.75rem;
+  }
+}
+@media (min-width: 992px) {
+  .landing-page .carousel .carousel-inner h1 {
+    font-size: 4.375rem;
+  }
+}
+.landing-page .carousel .carousel-inner .carousel-item {
+  background-size: cover;
+  background-position: 50% 20%;
+  height: calc(100vh - 182px);
+}
+@media (min-width: 992px) {
+  .landing-page .carousel .carousel-inner .carousel-item {
+    height: calc(100vh - 142px);
+  }
+}
+.landing-page .carousel .carousel-inner .carousel-one {
+  background-image: url("../images/slider01.webp");
+}
+.landing-page .carousel .carousel-inner .carousel-two {
+  background-image: url("../images/slider02.webp");
+}
+.landing-page .carousel .carousel-inner .carousel-three {
+  background-image: url("../images/slider03.webp");
+}
+.features .feat .icon-holder {
+  width: 3.75rem;
+  height: 3.75rem;
+} 
+.overview {
+  background-color: #f0f5f7;
+}
+.portfolio li {
+  border: 2px solid var(--secondary-color);
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+.portfolio li.active,
+.portfolio li:hover {
+  color: white;
+  border-color: var(--main-color);
+}
+.portfolio .shuffle-img img {
+  transition: all .5s ease-in-out;
+}
+.posts span {
+  color: #929fa5;
+}
+.testimonials {
+  background-image: url("../images/testimonial.webp");
+  background-size: cover;
+}
+.pricing .card {
+  box-shadow: 0px 1px 8px rgb(0 0 0 / 5%);
+} 
+@media (min-width: 992px) {
+  .pricing .card:not(.corporate) {
+    transform: translateY(20px);
+  }
+  
+}
+.pricing .corporate .btn:hover {
+  background-color: transparent;
+  border-color: var(--secondary-color);
+  color: var(--secondary-color) !important;
+}
+header .top-head,
+.pricing .corporate .btn,
+.about .info {
+  background-color: var(--secondary-color);
+}
+.overview .btn:hover,
+.pricing .btn:hover,
+.about .btn:hover {
+  background-color: transparent;
+  border-color: var(--main-color);
+  color: var(--main-color) !important;
+}
+.navbar-nav .nav-link.active, 
+.navbar-nav .nav-link.show,
+.posts a,
+.stats .box span {
+  color: var(--main-color);
+}
+.landing-page .carousel .carousel-inner h1 span,
+.features .feat .icon-holder,
+.overview .btn,
+.portfolio li.active,
+.portfolio li:hover,
+.pricing .btn,
+.pricing .corporate .card-text,
+.about .btn,
+.contact-us {
+  background-color: var(--main-color);
+}
+.navbar-nav .nav-link,
+.features .feat h5,
+.portfolio li,
+.posts h5,
+.pricing .card h4,
+.pricing .card .card-text,
+.stats .box,
+footer .info a,
+footer h4,
+footer li {
+  color: var(--secondary-color);
+}
+.contact-us .btn:hover,
+footer .info a:hover,
+footer .contact a:hover {
+  text-decoration: underline !important;
+}
+/* Start Framework */
+.paragraph-color {
+  color: #687074;
+}
+.letter-spacing {
+  letter-spacing: 5px;
+}
+.special-title {
+  max-width: 850px;
+}
+.overlay::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  background-color: rgba(0, 0, 0, 60%);
+}
+/* End Framework */
